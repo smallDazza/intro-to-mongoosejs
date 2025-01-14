@@ -13,12 +13,10 @@ const app = express();
 // syntax  is: app.verb(path, callback)
 app.get("/", (request, response) => {
     //response.send("<h1>Hello World</h1>");
-
     response.json({
         message: "Hello Dazza...."
     });
 });
-
 
 // Export the server for use in other parts of the project
 module.exports= {
