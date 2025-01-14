@@ -1,0 +1,26 @@
+{
+  "name": "intro-to-mongoosejs",
+  "version": "1.0.0",
+  "description": "- MongooseJS\r mongosh - mongo shell\r mongod - mongo service daemon\r mongos - sharding or clustering for mongodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smallDazza/intro-to-mongoosejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/smallDazza/intro-to-mongoosejs/issues"
+  },
+  "homepage": "https://github.com/smallDazza/intro-to-mongoosejs#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5"
+  }
+}
