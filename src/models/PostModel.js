@@ -1,4 +1,6 @@
 const mongoose = require("mongoose");
+const { LocalizedContentSchema } = require("./LocalizedContent");
+
 
 // Make a schema
 // template: const simpleSchema = new mongoose.Schema(objDefiningDataRules, SchemaOptions);
@@ -9,7 +11,8 @@ const PostSchema = new mongoose.Schema({
         minLength: 10,
         unique: true
     },
-    content: String,
+    // content: String,
+    content: [LocalizedContentSchema],
     date: {
         type: Date,
         default: Date.now()

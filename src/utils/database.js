@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
 const { PostModel } = require("../models/PostModel");
+const { UserModel } = require("../models/UserModel");
+
 require("dotenv").config();
 
 // Function to connect to the DB

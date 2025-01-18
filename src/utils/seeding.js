@@ -14,17 +14,37 @@ async function seed() {
 
     await createPost(
         "Important Post", 
-        "This is really important!",
+        [
+            {
+                languageCode: "en",
+                content: "This is really important"
+            },
+            {
+                languageCode: "ge",
+                content: "iouvnoionoaedn"
+            }
+        ],
         newUser.id
     );
     
     await createPost(
         "No so Important Post", 
-        "This is really not important!", 
+        [
+            {
+                languageCode: "en",
+                content: "This is NOT important"
+            },
+            {
+                languageCode: "ge",
+                content: "iouvnoion njjj jjj jjsh oaedn"
+            }
+        ], 
         newUser.id
     );
 
-    let getPostResult = await getPost({title: "Important Post"});
+    let getPostResult = await getPost({
+        "content.languageCode": "en"
+     });
     console.log(getPostResult);
 
     console.log("Seeding complete. Disconnecting...");
